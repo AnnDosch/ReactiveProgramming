@@ -1,4 +1,4 @@
-package ua.com.reactive.lab3.router;
+package ua.com.reactive.lab1.router;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

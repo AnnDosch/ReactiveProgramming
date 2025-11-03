@@ -3,9 +3,9 @@ package ua.com.reactive.lab1.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
-import ua.com.reactive.lab1.entity.Reader; // Використовуємо Reader
+import ua.com.reactive.lab1.entity.Reader; 
 import ua.com.reactive.lab1.entity.Book;
-import java.time.LocalDate; // <-- ДОДАЙТЕ ЦЕЙ ІМПОРТ
+import java.time.LocalDate; 
 
 @RestController
 public class MyController{
@@ -26,7 +26,6 @@ public class MyController{
 
     @GetMapping("/books")
     public Flux<Book> getBooks() {
-        // Використовуємо Book з 9 аргументами
         return Flux.just(
                 new Book(101L, "The Hunger Games", "Sjuzanna Kollinz", "978-617-7585-05-0", 2008, 1001L, true, "Subscription", null),
                 new Book(102L, "Harry Potter and the Philosopher's Stone", "Dž. K. Rouling", "978-0-7475-3274-3", 1997, 1002L, false, "Reading Room", LocalDate.now().plusDays(7)),

@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import ua.com.reactive.lab1.handler.GreetingHandler;
-import ua.com.reactive.lab1.handler.LibrarianHandler; // <--- ІМПОРТ
+import ua.com.reactive.lab1.handler.LibrarianHandler; 
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
 
@@ -18,13 +18,13 @@ public class GreetingRouter {
     @Bean
     public RouterFunction<ServerResponse> route(
             GreetingHandler greetingHandler,
-            LibrarianHandler librarianHandler // <--- ДОДАНО ЯК ЗАЛЕЖНІСТЬ
+            LibrarianHandler librarianHandler 
     ) {
 
         return RouterFunctions
                 .route(RequestPredicates.GET("/hello").and(accept(MediaType.APPLICATION_JSON)), greetingHandler::hello)
                 .andRoute(RequestPredicates.GET("/"), greetingHandler::home)
                 .andRoute(RequestPredicates.GET("/users"), greetingHandler::getClients)
-                .andRoute(RequestPredicates.GET("/api/librarians"), librarianHandler::getAllLibrarians); // <--- НОВИЙ МАРШРУТ
+                .andRoute(RequestPredicates.GET("/api/librarians"), librarianHandler::getAllLibrarians); 
     }
 }

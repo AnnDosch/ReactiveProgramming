@@ -1,4 +1,4 @@
-package ua.com.reactive.lab1.handler;
+package ua.com.reactive.lab3.handler;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;

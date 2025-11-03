@@ -13,7 +13,6 @@ import java.time.LocalDate;
 @Component
 public class BookHandler {
 
-    // Імітація бази даних Book з 9 аргументами
     private static final Flux<Book> BOOK_DB = Flux.just(
             new Book(101L, "The Hunger Games", "Sjuzanna Kollinz", "978-617-7585-05-0", 2008, 1001L, true, "Subscription", null),
             new Book(102L, "Harry Potter and the Philosopher's Stone", "Dž. K. Rouling", "978-0-7475-3274-3", 1997, 1002L, false, "Reading Room", LocalDate.of(2026, 1, 15)),

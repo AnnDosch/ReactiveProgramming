@@ -12,7 +12,6 @@ public class MyController{
 
     @GetMapping("/clients")
     public Flux<Reader> getClients() {
-        // Використовуємо Reader
         Flux<Reader> readers = Flux.just(
                         new Reader(1L, "Andriy", "Kovalenko", "0671234567", "a.kovalenko@lib.ua", 0),
                         new Reader(2L, "Olena", "Shevchenko", "0997654321", "o.shevchenko@lib.ua", 1),

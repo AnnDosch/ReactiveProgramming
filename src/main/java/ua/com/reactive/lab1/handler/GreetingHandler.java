@@ -7,7 +7,7 @@ import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import ua.com.reactive.lab1.entity.Reader; // Використовуємо Reader
+import ua.com.reactive.lab1.entity.Reader; 
 import ua.com.reactive.lab1.entity.Greeting;
 
 @Component
@@ -32,7 +32,6 @@ public class GreetingHandler {
                 .queryParam("start")
                 .orElse("0");
 
-        // Використовуємо Reader з повним конструктором
         Flux<Reader> readers = Flux.just(
                         new Reader(1L, "Andriy", "Kovalenko", "0671234567", "a.kovalenko@lib.ua", 0),
                         new Reader(2L, "Olena", "Shevchenko", "0997654321", "o.shevchenko@lib.ua", 1),

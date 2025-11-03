@@ -1,4 +1,4 @@
-package ua.com.reactive.lab1.router;
+package ua.com.reactive.lab3.router;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,8 +7,8 @@ import org.springframework.web.reactive.function.server.RequestPredicates;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
-import ua.com.reactive.lab1.handler.GreetingHandler;
-import ua.com.reactive.lab1.handler.LibrarianHandler; // <--- ІМПОРТ
+import ua.com.reactive.lab3.handler.GreetingHandler;
+import ua.com.reactive.lab3.handler.LibrarianHandler; // <--- ІМПОРТ
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
 

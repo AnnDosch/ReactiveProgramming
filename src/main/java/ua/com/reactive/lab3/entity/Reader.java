@@ -1,4 +1,4 @@
-package ua.com.reactive.lab1.entity;
+package ua.com.reactive.lab3.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

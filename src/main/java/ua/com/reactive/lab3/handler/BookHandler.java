@@ -1,4 +1,4 @@
-package ua.com.reactive.lab1.handler;
+package ua.com.reactive.lab3.handler;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -7,7 +7,7 @@ import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import ua.com.reactive.lab1.entity.Book;
+import ua.com.reactive.lab3.entity.Book;
 import java.time.LocalDate;
 
 @Component

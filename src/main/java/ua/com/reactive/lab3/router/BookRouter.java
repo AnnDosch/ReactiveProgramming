@@ -1,4 +1,4 @@
-package ua.com.reactive.lab1.router;
+package ua.com.reactive.lab3.router;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,7 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
-import ua.com.reactive.lab1.handler.BookHandler;
+import ua.com.reactive.lab3.handler.BookHandler;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.*;
 

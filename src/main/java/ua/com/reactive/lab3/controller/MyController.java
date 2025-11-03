@@ -1,10 +1,10 @@
-package ua.com.reactive.lab1.controller;
+package ua.com.reactive.lab3.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
-import ua.com.reactive.lab1.entity.Reader; // Використовуємо Reader
-import ua.com.reactive.lab1.entity.Book;
+import ua.com.reactive.lab3.entity.Reader; // Використовуємо Reader
+import ua.com.reactive.lab3.entity.Book;
 import java.time.LocalDate; // <-- ДОДАЙТЕ ЦЕЙ ІМПОРТ
 
 @RestController

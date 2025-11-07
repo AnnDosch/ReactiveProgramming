@@ -7,8 +7,8 @@ import org.springframework.web.reactive.function.server.RequestPredicates;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
-import ua.com.reactive.lab3.handler.GreetingHandler;
-import ua.com.reactive.lab3.handler.LibrarianHandler; // <--- ІМПОРТ
+import ua.com.reactive.lab4.handler.GreetingHandler;
+import ua.com.reactive.lab4.handler.LibrarianHandler; // <--- ІМПОРТ
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
 

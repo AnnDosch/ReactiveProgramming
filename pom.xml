@@ -9,10 +9,10 @@
         <relativePath/> </parent>
 
     <groupId>ua.com.reactive</groupId>
-    <artifactId>Lab3</artifactId>
+    <artifactId>Lab4</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Lab3</name>
-    <description>Lab 3: Spring WebFlux, R2DBC and Flyway</description>
+    <name>Lab4</name>
+    <description>Lab 4: Spring WebFlux, R2DBC and Flyway</description>
 
     <properties>
         <java.version>21</java.version>

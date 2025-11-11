@@ -1,0 +1,12 @@
+package ua.com.reactive.lab5;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest(classes = Main.class)
+class Lab5ApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+}
